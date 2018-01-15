@@ -8,7 +8,7 @@
 
 **Description**
 
-There are people who can post text posts into the blog. Also there should be user-friendly interface to manage the posts. Anonymous users should have possibility to read posts while registered users can create new posts and edit their own ones. The blog API is at https://frontend.recruiting.credy.com/v1/
+There are people who can post text posts into the blog. Also there should be user-friendly interface to manage the posts. Anonymous users should have possibility to read posts while registered users can create new posts and edit their own ones. The blog API is at https://frontend.recruiting.credy.com/
 
 ------------------------------------------------------------------------------------------------------------------------
 
@@ -18,12 +18,12 @@ API supports application/json, text/html based on accept and content-type header
 #### Valid routes
 | Method | Route      | Description                    |
 |:----|:-----------|:----------------------------------|
-| GET | `/posts` | Returns a list of posts |
-| GET | `/posts?page={PAGE_NR}` | Returns a list of posts on specific page |
-| POST | `/posts?access_token={OAUTH_ACCESS_TOKEN}` | Creates new post |
-| GET | `/posts/{ID}` | Returns specific post |
-| PUT | `/posts/{ID}?access_token={OAUTH_ACCESS_TOKEN}` | Updates specific post |
-| DELETE | `/posts/{ID}?access_token={OAUTH_ACCESS_TOKEN}` | Deletes specific post |
+| GET | `/v1/posts` | Returns a list of posts |
+| GET | `/v1/posts?page={PAGE_NR}` | Returns a list of posts on specific page |
+| POST | `/v1/posts?access_token={OAUTH_ACCESS_TOKEN}` | Creates new post |
+| GET | `/v1/posts/{ID}` | Returns specific post |
+| PUT | `/v1/posts/{ID}?access_token={OAUTH_ACCESS_TOKEN}` | Updates specific post |
+| DELETE | `/v1/posts/{ID}?access_token={OAUTH_ACCESS_TOKEN}` | Deletes specific post |
 | GET | `/auth` | API login route using OAuth2. <br> client_secret="secret" <br> client_id="client" <br> redirect_url="your application oauth token receiver url" <br>response_type="code or token" <br> |
 
 #### Accepted headers
