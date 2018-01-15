@@ -8,7 +8,7 @@
 
 **Description**
 
-There are people who can post text posts into the blog. Also there should be user-friendly interface to manage the posts. Anonymous users should have possibility to read posts while registered users can create new posts and edit their own ones. The blog API is at https://frontend.recruiting.credy.com/
+There are people who can post text posts into the blog. Also there should be user-friendly interface to manage the posts. Anonymous users should have possibility to read posts while registered users can create and update posts. The blog API is at https://frontend.recruiting.credy.com/
 
 ------------------------------------------------------------------------------------------------------------------------
 
@@ -24,7 +24,7 @@ API supports application/json, application/xml based on accept and content-type 
 | GET | `/v1/posts/{ID}` | Returns specific post |
 | PUT | `/v1/posts/{ID}?access_token={OAUTH_ACCESS_TOKEN}` | Updates specific post |
 | DELETE | `/v1/posts/{ID}?access_token={OAUTH_ACCESS_TOKEN}` | Deletes specific post |
-| GET | `/auth` | API login route using OAuth2. <br> client_secret="secret" <br> client_id="client" <br> redirect_url="your application oauth token receiver url" <br>response_type="code or token" <br> |
+| GET | `/auth` | API login route using OAuth2. <br> client_secret="secret" <br> client_id="client" <br> redirect_uri="your application oauth token receiver url" <br>response_type="code or token" <br> |
 
 #### Accepted headers
 | Header | Description |
