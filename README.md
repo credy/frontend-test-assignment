@@ -24,13 +24,13 @@ API supports application/json, text/html based on accept and content-type header
 | GET | `/posts/{ID}` | Returns specific post |
 | PUT | `/posts/{ID}?access_token={OAUTH_ACCESS_TOKEN}` | Updates specific post |
 | DELETE | `/posts/{ID}?access_token={OAUTH_ACCESS_TOKEN}` | Deletes specific post |
-| GET | `/auth` | API login route using OAuth2. <br> client_secret="secret" <br> client_id="client" <br> redirect_url="your application oauth token reciver url" <br>response_type="code or token" <br> |
+| GET | `/auth` | API login route using OAuth2. <br> client_secret="secret" <br> client_id="client" <br> redirect_url="your application oauth token receiver url" <br>response_type="code or token" <br> |
 
 #### Accepted headers
 | Header | Description |
 |:-------|:-----------|
-| accept | In witch format client expects data |
-| content-type | In witch format client sends data |
+| accept | In what format client accepts data |
+| content-type | In what format client sends data |
 ### Sent headers
 | Header | Description |
 |:-------|:-----------|
