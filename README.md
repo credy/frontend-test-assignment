@@ -8,7 +8,7 @@
 
 **Description**
 
-There are people who can post text posts into the blog. Also there should be user-friendly interface to manage the posts. Anonymous users should have possibility to read posts while registered users can create new posts and edit their own ones. The blog API is at https://frontend.recruiting.credy.com/
+There are people who can post text posts into the blog. Also there should be user-friendly interface to manage the posts. Anonymous users should have possibility to read posts while registered users can create new posts and edit their own ones. The blog API is at https://frontend.recruiting.credy.com/v1/
 
 ------------------------------------------------------------------------------------------------------------------------
 
@@ -19,17 +19,21 @@ API supports application/json, text/html based on accept and content-type header
 | Method | Route      | Description                    |
 |:----|:-----------|:----------------------------------|
 | GET | `/posts` | Returns a list of posts |
-| POST | `/posts` | Creates new post |
+| GET | `/posts?page={PAGE_NR}` | Returns a list of posts on specific page |
+| POST | `/posts?access_token={OAUTH_ACCESS_TOKEN}` | Creates new post |
 | GET | `/posts/{ID}` | Returns specific post |
-| PUT | `/posts/{ID}` | Updates specific post |
-| DELETE | `/posts/{ID}` | Deletes specific post |
-| GET | `/auth` | API login route using OAuth2. client_secret="secret", client_id="client" |
+| PUT | `/posts/{ID}?access_token={OAUTH_ACCESS_TOKEN}` | Updates specific post |
+| DELETE | `/posts/{ID}?access_token={OAUTH_ACCESS_TOKEN}` | Deletes specific post |
+| GET | `/auth` | API login route using OAuth2. <br> client_secret="secret" <br> client_id="client" <br> redirect_url="your application oauth token reciver url" <br>response_type="code or token" <br> |
 
 #### Accepted headers
-| Header | Description
+| Header | Description |
 |:-------|:-----------|
 | accept | In witch format client expects data |
 | content-type | In witch format client sends data |
+### Sent headers
+| Header | Description |
+|:-------|:-----------|
 | x-pagination-current-page | Current page |
 | x-pagination-page-count | Total count of pages |
 | x-pagination-per-page | Resources per page |
