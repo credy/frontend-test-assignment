@@ -1,6 +1,6 @@
 # Credy
 
-## Frotned developer position's test task
+## Frontend developer position's test task
 
 ------------------------------------------------------------------------------------------------------------------------
 
@@ -13,7 +13,7 @@ There are people who can post text posts into the blog. Also there should be use
 ------------------------------------------------------------------------------------------------------------------------
 
 ### API Documentation
-API supports application/json, text/html based on accept and content-type headers
+API supports application/json, application/xml based on accept and content-type headers
 
 #### Valid routes
 | Method | Route      | Description                    |
