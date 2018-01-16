@@ -24,7 +24,7 @@ API supports application/json, application/xml based on accept and content-type 
 | GET | `/v1/posts/{ID}` | Returns specific post |
 | PUT | `/v1/posts/{ID}?access_token={OAUTH_ACCESS_TOKEN}` | Updates specific post |
 | DELETE | `/v1/posts/{ID}?access_token={OAUTH_ACCESS_TOKEN}` | Deletes specific post |
-| GET | `/auth` | API login route using OAuth2. <br> client_secret="secret" <br> client_id="client" <br> redirect_url="your application oauth token receiver url" <br>response_type="code or token" <br> |
+| GET | `/auth` | API login route using [OAuth2](https://tools.ietf.org/html/rfc6749). <br> client_secret="secret" <br> client_id="client" <br> redirect_url="your application oauth token receiver url" <br>response_type="code or token" <br> |
 
 #### Accepted headers
 | Header | Description |
@@ -54,6 +54,8 @@ You should be proud of your own code.
 | 1 | NodeJS compatibility from 6.10+ |  | X | X |
 | 1 | Proper error handling |  |  | X |
 | 2 | Usage of VueX store <br><ul><li>State in general store</li><li>State should stay after page refresh</li></ul> |  | X | X |
+| 2 | Pagination <br><ul><li>Can move forward and backward between pages</li><li>Can jump directly to page</li></ul> |  | X | X |
+| 2 | OAuth2 login <br><ul><li>Creating posts</li><li>Editing posts</li><li>Deleting posts</li></ul> |  |  | X |
 | 1 | Optimal memory usage |  |  | X |
 | 1 | Caching & cache invalidation [clicky :)](https://martinfowler.com/bliki/TwoHardThings.html)  |  |  | X |
-| 2 | Automated tests <br><ul><li>unit</li><li>functional</li><li>Auto run tests in gitlab / github at each push</li></ul> |  |  | X |
+| 3 | Automated tests <br><ul><li>unit</li><li>functional</li><li>Auto run tests in gitlab / github at each push</li></ul> |  |  | X |
